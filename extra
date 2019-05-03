@@ -1,0 +1,67 @@
+Angular is open
+https://www.npmjs.com/
+
+package.json
+
+javascript object notation
+[
+    {
+        name:"a",
+        class:"ui"
+    },
+    {
+        name:'john',
+        class:"angular"
+    }
+]
+
+/*************************
+Step to create package.json
+*************************/
+Step 1: Install Nodejs
+Step 2: Go inside the folder  using command prompt
+step 3: npm init
+step 4: Answer all question
+step 5: write 'yes'
+
+Local dependecny 
+global =>  help to start application or build app
+
+/*************************
+Step to install packages
+*************************/
+step 1 : go inside folder using command prompt
+step 2: npm install <packagename>
+        npm install @aakashdeveloper/create-node-app
+
+//////For Global Install ////////////
+npm install -g @angular/cli
+for mac
+>> sudo npm install -g @angular/cli
+for windows
+>> run cmd as admin
+npm install -g @angular/cli
+
+/************************
+Step to start Angular app
+************************/
+step 1: Install anagular cli
+        > npm install -g @angular/cli
+step 2: Go inside folder using command prompt
+step 3: ng new firstapp
+step 4: press enter 2 times
+step 5: go inside <app name> using command prompt
+step 6: npm start
+step 7: go to browser > http://localhost:4200
+
+/************************
+Angular Building Block
+************************/
+module => All Declaration here           => NgModule
+component => Containes HTML, CSS, logic  => Component
+pipe => run time data change             => Pipe, Pipetransform
+service => help to connect with party    => Injectable
+routing => route between pages           => NgModule
+
+main component
+main module
