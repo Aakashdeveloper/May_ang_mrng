@@ -45,7 +45,7 @@ npm install -g @angular/cli
 /************************
 Step to start Angular app
 ************************/
-step 1: Install anagular cli
+step 1: Install anagular cli5
         > npm install -g @angular/cli
 step 2: Go inside folder using command prompt
 step 3: ng new firstapp
@@ -65,3 +65,33 @@ routing => route between pages           => NgModule
 
 main component
 main module
+
+
+/************************
+  Folder WalkThrough
+************************/
+File                 | Importance | Explain
+tslint.json               Yes       Help to write code in angular standerds
+tsconfig.json             yes       help to trasnpile from .ts => .js
+Readme.md                 No        Description or step to run application
+package.json              Yes       Conatins description and package name
+package-lock.json         No        Containes information of child dependecny
+angular.json              Yes       All paths and standerds of applications
+.gitignore                No        Containes all the thing you dont want to push
+.editorconfig             No        Same standerd of coding accros the team
+-----------------
+Src>
+app                       Yes       All app building happen here
+assests                   No        All Static files like images js css
+environment               Yes       Which env application is using
+browserList               No        Specify which all browser we can use
+favicon                   No        Image in the browser tab
+index.html                Yes       Main Html files
+main.ts                  Yes        Main file which specify which module is first
+
+
+/************************
+  Flow of application
+************************/
+
+angular.json => main.ts => app.module.ts => app.component.ts

@@ -2,8 +2,11 @@ import { Component } from '@angular/core';
 
 // metadata
 @Component({
-   selector: 'app-root',
-   template: `<h1> Welcome to Angular</h1>`
+   selector: 'app-main',
+   template: `<div>
+                <h1> Welcome to Angular</h1>
+                <app-movies></app-movies>
+             </div>`
 })
 
 

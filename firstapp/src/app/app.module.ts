@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { MoviesComponent } from './movies.component';
 
 @NgModule({
     // All module declare here
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
 
     // All Component & pipe
     declarations: [
-        AppComponent
+        AppComponent,
+        MoviesComponent
     ],
 
     // only first component
