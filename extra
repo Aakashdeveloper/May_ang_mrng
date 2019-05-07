@@ -95,3 +95,24 @@ main.ts                  Yes        Main file which specify which module is firs
 ************************/
 
 angular.json => main.ts => app.module.ts => app.component.ts
+
+/************************
+  Bootstrap Tags
+************************/
+Grid Basic
+Table
+Alerts
+Button
+Glyphicon
+Panels
+navbar
+Forms
+Input
+modal
+
+/*****************************
+  How to start using Component
+****************************/
+Step 1: Create Component with selector and class name
+Step 2: Declare Class in App.module.ts
+step 3: Use selector in app.component.html

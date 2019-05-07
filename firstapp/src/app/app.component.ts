@@ -3,10 +3,7 @@ import { Component } from '@angular/core';
 // metadata
 @Component({
    selector: 'app-main',
-   template: `<div>
-                <h1> Welcome to Angular</h1>
-                <app-movies></app-movies>
-             </div>`
+   templateUrl: './app.component.html'
 })
 
 
@@ -14,3 +11,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 }
+
+
+
+/*
+template: `<div>
+                <h1> Welcome to Angular</h1>
+                <app-movies></app-movies>
+             </div>`
+*/

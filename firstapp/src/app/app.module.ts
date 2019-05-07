@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies.component';
+import { ProductComponent } from './products/product.component';
 
 @NgModule({
     // All module declare here
@@ -14,7 +15,8 @@ import { MoviesComponent } from './movies.component';
     // All Component & pipe
     declarations: [
         AppComponent,
-        MoviesComponent
+        MoviesComponent,
+        ProductComponent
     ],
 
     // only first component
