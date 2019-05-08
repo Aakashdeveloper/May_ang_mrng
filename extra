@@ -116,3 +116,43 @@ modal
 Step 1: Create Component with selector and class name
 Step 2: Declare Class in App.module.ts
 step 3: Use selector in app.component.html
+
+/*****************************
+  Binding in Angular
+****************************/
+>>One way Binding
+  > Data Binding      {{}}
+  > Property Binding  []
+  > Event Binding     ()
+>>Two Way Binding     [()]
+
+
+/*****************************
+     Data Types
+****************************/
+string
+number
+boolean
+any[]
+
+/*****************************
+    In Built Directive
+****************************/
+*ngFor => help to iterate the data
+*ngIf  => Show hide the content
+
+https://ngproductsparam.herokuapp.com/api/getProductDetails
+
+/*****************************
+   Git Commands
+****************************/
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/gitlearn1.git
+git push -u origin master
+
+//////
+git add .
+git commit -m "first commit"
+git push -u origin master

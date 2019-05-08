@@ -1,0 +1,56 @@
+<div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Products Page
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Ui</td>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>AI</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <input type="text">
+                </div>
+            </div>
+            <button type="button">Submit</button>
+            <button class="btn btn-success" type="button">Submit</button>
+            <button class="btn btn-warning" type="button">Submit</button>
+            <button class="btn btn-danger" type="button">Submit</button>
+            <button class="btn btn-primary" type="button">Submit</button>
+            <button class="btn btn-info" type="button">Submit</button>
+        </div>
+    </div>
+</div>
