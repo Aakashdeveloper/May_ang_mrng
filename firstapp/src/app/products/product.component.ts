@@ -7,28 +7,30 @@ import { Component } from '@angular/core';
 
 export class ProductComponent {
     title: string = '******Products Page********';
+    showTable: boolean = true;
+    showImage: boolean = false;
     products: any[] = [
         {
-            _id: "5a05db08734d1d68d42d3300",
+            _id: '5a05db08734d1d68d42d3300',
             productId: 3,
-            productName: "Hammer",
-            productCode: "TBX-0048",
-            releaseDate: "May 21, 2016",
-            description: "Curved claw steel hammer",
+            productName: 'Hammer',
+            productCode: 'TBX-0048',
+            releaseDate: 'May 21, 2016',
+            description: 'Curved claw steel hammer',
             price: 8.9,
             starRating: 4.8,
-            imageUrl: "https://i.ibb.co/TrR7jkM/hammer.png"
+            imageUrl: 'https://i.ibb.co/TrR7jkM/hammer.png'
         },
         {
-            "_id": "5a05db24734d1d68d42d3313",
-            "productId": 8,
-            "productName": "Saw",
-            "productCode": "TBX-0022",
-            "releaseDate": "May 15, 2016",
-            "description": "15-inch steel blade hand saw",
-            "price": 11.55,
-            "starRating": 3.7,
-            "imageUrl": "https://i.ibb.co/vmS3kRH/saw.png"
+            _id: "5a05db24734d1d68d42d3313",
+            productId: 8,
+            productName: "Saw",
+            productCode: "TBX-0022",
+            releaseDate: "May 15, 2016",
+            description: "15-inch steel blade hand saw",
+            price: 11.55,
+            starRating: 3.7,
+            imageUrl: "https://i.ibb.co/vmS3kRH/saw.png"
         },
         {
             "_id": "5a05db3d734d1d68d42d3322",

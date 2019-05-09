@@ -156,3 +156,13 @@ git push -u origin master
 git add .
 git commit -m "first commit"
 git push -u origin master
+
+
+1 & 1
+1
+true & true
+1
+false & true
+0
+0 & 1
+0

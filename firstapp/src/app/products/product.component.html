@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="table-responsive">
-            <table class="table">
+            <table class="table" *ngIf="products && products.length; else noData">
                 <thead>
                     <tr>
                         <th>
@@ -33,17 +33,22 @@
                         <th>Rating</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Ui</td>
-                    </tr>
-                    <tr>
-                        <td>Bill</td>
-                        <td>AI</td>
+                <tbody >
+                    <tr *ngFor="let prod of products" >
+                        <td>
+                            <img [src]="prod.imageUrl" *ngIf="showImage" />
+                        </td>
+                        <td>{{prod.productName}}</td>
+                        <td>{{prod.productCode}}</td>
+                        <td>{{prod.releaseDate}}</td>
+                        <td>{{prod.price}}</td>
+                        <td>{{prod.starRating}}</td>
                     </tr>
                 </tbody>
             </table> 
+            <ng-template #noData>
+               <img src="../../assets/loading.gif">
+            </ng-template>
             </div>   
     </div>
 </div>
