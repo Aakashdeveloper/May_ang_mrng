@@ -9,6 +9,7 @@ export class ProductComponent {
     title: string = '******Products Page********';
     showTable: boolean = true;
     showImage: boolean = false;
+    userSearch: string = 'user input';
     products: any[] = [
         {
             _id: '5a05db08734d1d68d42d3300',
@@ -44,4 +45,8 @@ export class ProductComponent {
             "imageUrl": "https://i.ibb.co/HD3RHMW/videogame.jpg"
         }
     ];
+
+    toggleImage(): void {
+        this.showImage = !this.showImage;
+    }
 }

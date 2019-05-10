@@ -166,3 +166,9 @@ false & true
 0
 0 & 1
 0
+
+/*****************************
+   Pipes/filters
+****************************/
+> inbuilts pipes
+Uppercase | lowercase | currency | data | perctenage |titlecase
