@@ -172,3 +172,13 @@ false & true
 ****************************/
 > inbuilts pipes
 Uppercase | lowercase | currency | data | perctenage |titlecase
+
+
+https://www.w3schools.com/jsref/jsref_filter.asp
+https://www.w3schools.com/jsref/jsref_indexof.asp
+
+function add(a,b){
+  return a+b
+}
+
+const add  = (a,b) => { return a+b }
