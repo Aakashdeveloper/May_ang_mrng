@@ -8,6 +8,7 @@ import { MoviesComponent } from './movies.component';
 import { ProductComponent } from './products/product.component';
 import { MyUpperPipe } from './products/myupper.pipe';
 import { DiscountPipe } from './products/discountPipe';
+import { SearchPipe } from './products/productSearch.pipe';
 
 @NgModule({
     // All module declare here
@@ -22,7 +23,8 @@ import { DiscountPipe } from './products/discountPipe';
         MoviesComponent,
         ProductComponent,
         MyUpperPipe,
-        DiscountPipe
+        DiscountPipe,
+        SearchPipe
     ],
 
     // only first component

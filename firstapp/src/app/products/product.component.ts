@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct } from './product.model';
 
 @Component({
     selector: 'app-product',
@@ -9,8 +10,8 @@ export class ProductComponent {
     title: string = '******Products Page********';
     showTable: boolean = true;
     showImage: boolean = false;
-    userSearch: string = 'user input';
-    products: any[] = [
+    userSearch: string;
+    products: IProduct[] = [
         {
             _id: '5a05db08734d1d68d42d3300',
             productId: 3,
@@ -43,6 +44,17 @@ export class ProductComponent {
             price: 35.95,
             starRating: 4.6,
             imageUrl: 'https://i.ibb.co/HD3RHMW/videogame.jpg'
+        },
+        {
+            _id: '5a05db24734d1d68d42d3313',
+            productId: 8,
+            productName: 'Saw',
+            productCode: 'TBX-0022',
+            releaseDate: 'May 15, 2016',
+            description: '15-inch steel blade hand saw',
+            price: 31.55,
+            starRating: 3.7,
+            imageUrl: 'https://i.ibb.co/vmS3kRH/saw.png'
         }
     ];
 
