@@ -43,7 +43,9 @@
                         <td>{{prod.productCode | myupper:'lower'}}</td>
                         <td>{{prod.releaseDate}}</td>
                         <td>{{prod.price | discount | currency:'GBP'  }}</td>
-                        <td>{{prod.starRating}}</td>
+                        <td>
+                            <app-star [rating]="prod.starRating"></app-star>
+                        </td>
                     </tr>
                 </tbody>
             </table> 

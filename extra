@@ -200,3 +200,11 @@ var ages = [32, 33, 16, 40];
 function myFunction() {
   document.getElementById("demo").innerHTML = ages.filter((age) => { return age>=18 });
 }
+
+
+
+/*****************************
+  Passing data between component
+****************************/
+parent=> child  as Property
+child => parent as event
