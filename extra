@@ -208,3 +208,14 @@ function myFunction() {
 ****************************/
 parent=> child  as Property
 child => parent as event
+
+
+/*****************************
+ Way to Add css
+****************************/
+1> Adding Css inside .ts
+2> Using Css File
+3> Inline Css
+4> Binding Dynamic Css
+5> Conditional Css using Ng style
+6> Using ng Class

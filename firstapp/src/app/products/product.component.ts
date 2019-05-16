@@ -3,7 +3,14 @@ import { IProduct } from './product.model';
 
 @Component({
     selector: 'app-product',
-    templateUrl: './product.component.html'
+    templateUrl: './product.component.html',
+    // styles: ['thead{color:teal}', 'h4{color:tomato}']
+    styleUrls: ['./product.component.css'],
+    styles: [
+        `.online{
+            background-color: wheat
+        }`
+    ]
 })
 
 export class ProductComponent {
@@ -11,6 +18,13 @@ export class ProductComponent {
     showTable: boolean = true;
     showImage: boolean = false;
     userSearch: string;
+    imageWidth: number = 100;
+    serverstatus: string = 'offline';
+
+    constructor() {
+        this.serverstatus = Math.random() > 0.5 ? 'Online' : 'Offline';
+    }
+
     products: IProduct[] = [
         {
             _id: '5a05db08734d1d68d42d3300',
@@ -30,7 +44,7 @@ export class ProductComponent {
             productCode: 'TBX-0022',
             releaseDate: 'May 15, 2016',
             description: '15-inch steel blade hand saw',
-            price: 31.55,
+            price: 34.55,
             starRating: 3.6,
             imageUrl: 'https://i.ibb.co/vmS3kRH/saw.png'
         },
@@ -41,7 +55,7 @@ export class ProductComponent {
             productCode: 'GMG-0042',
             releaseDate: 'October 15, 2015',
             description: 'Standard two-button video game controller',
-            price: 35.95,
+            price: 25.95,
             starRating: 3.6,
             imageUrl: 'https://i.ibb.co/HD3RHMW/videogame.jpg'
         },
@@ -52,11 +66,15 @@ export class ProductComponent {
             productCode: 'TBX-0022',
             releaseDate: 'May 15, 2016',
             description: '15-inch steel blade hand saw',
-            price: 31.55,
+            price: 33.55,
             starRating: 1.7,
             imageUrl: 'https://i.ibb.co/vmS3kRH/saw.png'
         }
     ];
+
+    getColor() {
+        return this.serverstatus === 'Online' ? 'green' : 'red';
+    }
 
     toggleImage(): void {
         this.showImage = !this.showImage;
