@@ -1,5 +1,6 @@
 import { Component, OnChanges,
-        OnInit, OnDestroy, Input } from '@angular/core';
+        OnInit, OnDestroy, Input,
+        Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'app-star',
@@ -12,7 +13,8 @@ export class StarComponent implements OnChanges, OnInit, OnDestroy {
     // only one time
     starWidth: number;
     @Input() rating: number;
-    @Input() score: number;
+    @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
+
     constructor() {
         console.log('inside Constructor');
     }
@@ -20,7 +22,7 @@ export class StarComponent implements OnChanges, OnInit, OnDestroy {
     // This work on change detection
     ngOnChanges() {
         console.log(this.rating);
-        this.starWidth = this.rating * 86 / 6;
+        this.starWidth = this.rating * 86 / 5.2;
     }
 
     // This fires after onchanges
@@ -31,5 +33,9 @@ export class StarComponent implements OnChanges, OnInit, OnDestroy {
     // when you looose context
     ngOnDestroy() {
         console.log('inside on destroy');
+    }
+
+    onStarClick(): void {
+        this.ratingClicked.emit(`Rating clicked is ${this.rating}`);
     }
 }

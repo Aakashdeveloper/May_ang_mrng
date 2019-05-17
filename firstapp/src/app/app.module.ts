@@ -10,6 +10,7 @@ import { MyUpperPipe } from './products/myupper.pipe';
 import { DiscountPipe } from './products/discountPipe';
 import { SearchPipe } from './products/productSearch.pipe';
 import { StarComponent } from './shared/star.component';
+import { ProductService } from './products/product.service';
 
 @NgModule({
     // All module declare here
@@ -35,7 +36,9 @@ import { StarComponent } from './shared/star.component';
     ],
 
     // All services
-    providers: []
+    providers: [
+        ProductService
+    ]
 })
 
 export class AppModule {

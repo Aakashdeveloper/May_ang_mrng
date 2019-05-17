@@ -219,3 +219,7 @@ child => parent as event
 4> Binding Dynamic Css
 5> Conditional Css using Ng style
 6> Using ng Class
+
+var a = 10
+var b = "my age is "+a 
+var c = `my age is ${a}`
