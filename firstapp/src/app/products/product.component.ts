@@ -29,8 +29,8 @@ export class ProductComponent implements OnInit {
     products: IProduct[];
 
     ngOnInit(): void {
-        this.products = this.productService.getProducts();
-        this.productService.reciveDataFromProduct(this.title);
+        this.productService.getProducts()
+        .subscribe((data) => this.products = data);
     }
 
     getColor() {
