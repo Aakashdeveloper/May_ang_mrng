@@ -46,7 +46,9 @@
                                  [style.width.px]="imageWidth"/>
                         </td>
                         <td style="color:hotpink">
-                            {{prod.productName | myupper:'upper':'abc'}}
+                            <a [routerLink]="['/products', prod.productId]">
+                                {{prod.productName | myupper:'upper':'abc'}}
+                            </a>
                         </td>
                         <td>{{prod.productCode | myupper:'lower'}}</td>
                         <td>{{prod.releaseDate}}</td>
