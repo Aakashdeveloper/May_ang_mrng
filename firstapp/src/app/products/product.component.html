@@ -46,7 +46,8 @@
                                  [style.width.px]="imageWidth"/>
                         </td>
                         <td style="color:hotpink">
-                            <a [routerLink]="['/products', prod.productId]">
+                            <a [routerLink]="['/products', prod.productId]"
+                            >
                                 {{prod.productName | myupper:'upper':'abc'}}
                             </a>
                         </td>
@@ -68,3 +69,8 @@
             </div>   
     </div>
 </div>
+
+
+<!--
+    [queryParams]="{name:prod.productName,img:prod.imageUrl,desc:prod.description}"
+-->
