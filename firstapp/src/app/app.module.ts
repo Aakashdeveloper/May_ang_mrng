@@ -18,6 +18,7 @@ import { MusicComponent } from './music/music.component';
 import { OrderComponent } from './orders/order.component';
 import { ProductDetailComponent } from './products/product-detail.component';
 import { NotFoundComponent } from './shared/notfound.component';
+import { ProductModule } from './products/product.module';
 
 @NgModule({
     // All module declare here
@@ -33,34 +34,25 @@ import { NotFoundComponent } from './shared/notfound.component';
             {path: 'home', component: HomeComponent},
             {path: '', redirectTo: 'home', pathMatch: 'full'},
             {path: '**', component: NotFoundComponent},
-        ])
+        ]),
+        ProductModule
     ],
 
     // All Component & pipe
     declarations: [
         AppComponent,
-        MoviesComponent,
-        ProductComponent,
-        MyUpperPipe,
-        DiscountPipe,
-        SearchPipe,
         StarComponent,
         HomeComponent,
         MusicComponent,
         OrderComponent,
-        ProductDetailComponent,
         NotFoundComponent
     ],
-
     // only first component
     bootstrap: [
         AppComponent
     ],
-
     // All services
-    providers: [
-        ProductService
-    ]
+    providers: []
 })
 
 export class AppModule {
