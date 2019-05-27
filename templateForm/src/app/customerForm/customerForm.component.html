@@ -1,0 +1,76 @@
+<br/>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        CutsomerForm
+    </div>
+    <div class="panel-body">
+        <form #form="ngForm" (submit)="submitForm(form)">
+            <div class="form-group">
+                <label for="FirstName">FirstName</label>
+                <input type="text"
+                    class="form-control"
+                    name="firstname"
+                    id="FirstName"/>
+            </div>
+            <div class="form-group">
+                <label for="LastName">LastName</label>
+                <input type="text"
+                    class="form-control"
+                    name="lastname"
+                    id="LastName"/>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text"
+                        class="form-control"
+                        name="email"
+                        id="Email"/>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password"
+                        class="form-control"
+                        name="password"
+                        id="pwd"/>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="fulltime"
+                    value="fulltime"/>Fulltime
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio"
+                        name="gender"
+                        value="female"/>Female
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio"
+                        name="gender"
+                        value="male"/>Male
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="clang">Code Lang</label>
+                <select class="form-control"
+                    name="codelang"
+                    id="clang">
+                    <option *ngFor="let lang of languages">
+                        {{lang}}
+                    </option>
+                </select>
+            </div>
+            <button class="btn btn-success"
+                type="submit">
+                Submit
+            </button>&nbsp;
+            <button class="btn btn-danger"
+                type="reset">
+                Reset
+            </button>
+        </form>
+    </div>
+</div>
