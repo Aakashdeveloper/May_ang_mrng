@@ -6,12 +6,13 @@ import { OrderComponent } from './orders/order.component';
 import { MusicComponent } from './music/music.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './shared/notfound.component';
+import { RouterGaurd } from './products/product-routergaurd';
 
 
 
 const routes: Routes = [
     {path: 'products', component: ProductComponent},
-    {path: 'products/:id', component: ProductDetailComponent},
+    {path: 'products/:id', canActivate: [RouterGaurd] , component: ProductDetailComponent},
     {path: 'orders', component: OrderComponent},
     {path: 'music', component: MusicComponent},
     {path: 'home', component: HomeComponent},
@@ -22,7 +23,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    providers: [],
+    providers: [RouterGaurd],
     exports: [RouterModule]
 })
 

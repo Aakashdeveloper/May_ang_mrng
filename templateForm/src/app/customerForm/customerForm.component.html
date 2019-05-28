@@ -10,6 +10,8 @@
                 <input type="text"
                     class="form-control"
                     name="firstname"
+                    [ngModel] ="mycust.firstname"
+                    (ngModelChange)="firstToUpper($event)"
                     id="FirstName"/>
             </div>
             <div class="form-group">
@@ -17,6 +19,7 @@
                 <input type="text"
                     class="form-control"
                     name="lastname"
+                    [(ngModel)] ="mycust.lastname"
                     id="LastName"/>
             </div>
             <div class="form-group">
@@ -24,6 +27,7 @@
                 <input type="text"
                         class="form-control"
                         name="email"
+                        [(ngModel)] ="mycust.email"
                         id="Email"/>
             </div>
             <div class="form-group">
@@ -31,32 +35,38 @@
                 <input type="password"
                         class="form-control"
                         name="password"
+                        [(ngModel)] ="mycust.password"
                         id="pwd"/>
             </div>
             <div class="checkbox">
                 <label>
                     <input type="checkbox" name="fulltime"
-                    value="fulltime"/>Fulltime
+                    value="fulltime"
+                    [(ngModel)] ="mycust.fulltime"/>Fulltime
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio"
                         name="gender"
-                        value="female"/>Female
+                        value="female"
+                        [(ngModel)] ="mycust.gender"/>Female
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio"
                         name="gender"
-                        value="male"/>Male
+                        value="male"
+                        [(ngModel)] ="mycust.gender"
+                        />Male
                 </label>
             </div>
             <div class="form-group">
                 <label for="clang">Code Lang</label>
                 <select class="form-control"
                     name="codelang"
+                    [(ngModel)] ="mycust.codelang"
                     id="clang">
                     <option *ngFor="let lang of languages">
                         {{lang}}
