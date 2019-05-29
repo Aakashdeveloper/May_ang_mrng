@@ -4,6 +4,7 @@ export class ICustomer {
         public lastname: string,
         public email: string,
         public password: string,
+        public password2: string,
         public fulltime: boolean,
         public gender: string,
         public codelang: string

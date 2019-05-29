@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ICustomer } from '../models/customer.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
     selector: 'app-form',
@@ -9,7 +10,9 @@ import { ICustomer } from '../models/customer.model';
 
 export class CustomerFormComponent {
     languages: any[] = ['Angular', 'React', 'Python', 'Node', 'Golang'];
-    mycust = new ICustomer('John', '', '', '', true, 'male', '');
+    mycust = new ICustomer('John', 'Stephen', 'a@a.com', '12345678', '123', true, 'male', 'Angular');
+    hasCodeLangError: boolean = false;
+    passworderror:boolean =  false;
 
     firstToUpper(value): void {
         if (value.length > 0) {
@@ -17,5 +20,27 @@ export class CustomerFormComponent {
         } else  {
             this.mycust.firstname =  value;
         }
+    }
+
+    validateCodeLang(event): void {
+        if (this.mycust.codelang === 'default') {
+            this.hasCodeLangError = true;
+        } else {
+            this.hasCodeLangError = false;
+        }
+    }
+    validatepassword(event): void {
+        if (this.mycust.password.length < 8) {
+            this.passworderror = true;
+        } else {
+            this.passworderror = false;
+        }
+    }
+    validateForm(event): void {
+
+    }
+
+    submitForm(form: NgForm): void {
+        console.log('>>>>>>>>>', form.value);
     }
 }

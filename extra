@@ -223,3 +223,10 @@ child => parent as event
 var a = 10
 var b = "my age is "+a 
 var c = `my age is ${a}`
+
+
+/***************
+For validation
+****************/
+ng-pristine    ng-valid        ng-untouched
+ng-dirty      ng-invalid       ng-touched
