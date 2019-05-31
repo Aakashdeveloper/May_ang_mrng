@@ -5,13 +5,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CustomerFormComponent } from './customerForm/customerForm.component';
-import { FormPosterService } from './services/formposter.seervice';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MypipePipe } from './mypipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerFormComponent
+    LoginFormComponent,
+    RegisterFormComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -19,9 +23,7 @@ import { FormPosterService } from './services/formposter.seervice';
     FormsModule,
     HttpClientModule
   ],
-  providers: [
-    FormPosterService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

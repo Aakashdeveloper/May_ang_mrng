@@ -230,3 +230,26 @@ For validation
 ****************/
 ng-pristine    ng-valid        ng-untouched
 ng-dirty      ng-invalid       ng-touched
+
+
+
+/***************
+  login api
+****************/
+
+Login: http://localhost:5000/api/auth/login
+Register: http://localhost:5000/api/auth/register
+All User: http://localhost:5000/api/auth/users
+userinfo: http://localhost:5000/api/auth/userinfo
+
+/***************
+  CLI
+****************/
+
+ng g c login-form/ ng generate component login-form
+ng g s myservice
+ng g p mypipe
+ng g m module
+
+
+https://www.youtube.com/watch?v=g32_8qadMew&t=17s
