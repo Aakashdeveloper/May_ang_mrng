@@ -4,7 +4,7 @@
         CutsomerForm
     </div>
     <div class="panel-body">
-        <form #form="ngForm" (submit)="submitForm(form)">
+        <form #form="ngForm" (submit)="submitRegister(form)">
             <div class="form-group" [class.has-error]="firstname.invalid">
                 <label for="FirstName"
                     class="control-label">FirstName</label>
@@ -12,8 +12,7 @@
                     class="form-control"
                     name="firstname"
                     required
-                    [ngModel] ="mycust.firstname"
-                    (ngModelChange)="firstToUpper($event)"
+                    [(ngModel)] ="register.firstname"
                     #firstname="ngModel"
                     id="FirstName"/>
                 <div class="alert alert-danger" *ngIf="firstname.invalid">
@@ -29,7 +28,7 @@
                         name="email"
                         #email="ngModel"
                         pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
-                        [(ngModel)] ="mycust.email"
+                        [(ngModel)] ="register.email"
                         id="Email"/>
                     <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
                            Enter Valid Email
@@ -42,7 +41,7 @@
                         name="password"
                         minlength="8"
                         #password="ngModel"
-                        [(ngModel)] ="mycust.password"
+                        [(ngModel)] ="register.password"
                         id="pwd"/>
                         <div class="alert alert-danger" *ngIf="password.invalid && password.touched">
                             Min length is 8

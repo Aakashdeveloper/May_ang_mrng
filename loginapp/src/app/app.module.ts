@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MypipePipe } from './mypipe.pipe';
+import { RegisterServiceService } from './register-form/register-service.service';
+import { LoginserviceService } from './loginservice.service';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { MypipePipe } from './mypipe.pipe';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    RegisterServiceService,
+    LoginserviceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
