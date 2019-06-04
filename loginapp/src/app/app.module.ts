@@ -9,7 +9,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterServiceService } from './register-form/register-service.service';
-import { LoginserviceService } from './loginservice.service';
+import { LoginserviceService } from './login-form/loginservice.service';
+
 
 
 @NgModule({

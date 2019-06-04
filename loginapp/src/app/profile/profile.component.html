@@ -1,3 +1,11 @@
-<p>
-  profile works!
-</p>
+<h1>
+  Hi {{userinfo.name}}
+</h1>
+<h2>Your role is {{userinfo.role}}</h2>
+<h2>You have Permission to
+   {{userinfo.role==="admin"?"Add New user":"View Your profile"}}</h2>
+<div *ngIf="userinfo.role==='admin'">
+  <button class="btn btn-success" [routerLink]="['/register']">
+    Register
+  </button>
+</div>
